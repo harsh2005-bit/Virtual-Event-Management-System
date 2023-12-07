@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <style>
+        #sidenav
+{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(21, 20, 20);
+    /* background: rgb(250, 210, 245); */
+    opacity: 30%;
+    z-index: 2;
+    transition: 0.7s;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover
+{
+    color: orange;
+    text-shadow: 4px 4px 8px rgb(68, 33, 68);
+}
+#menubtn
+{
+    width: 50px;
+    height: 50px;
+    /* background: navy; */
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img
+{
+    width: 25px;
+    margin-top: 25px;
+}
+        /*--Gallery--*/
+/* #gallery
+{
+    width: 100%;
+    padding: 70px 0;
+    background: lightgoldenrodyellow;
+} */
+marquee
+{
+    font-size: 20px;
+    font-weight: 700;
+    color:indigo;
+    text-shadow: 2px 4px 8px pink, 2px 2px 4px magenta, 0 4px 4px pink;
+    text-decoration: indianred;
+}
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container 
+{
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  top: -80px;
+  left: 15px;
+}
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover 
+{
+  background-color: rgb(19, 5, 143);
+}
+.text 
+{
+  color: orange;
+  background: black;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 8px 25px;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext 
+{
+  color: black;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+iframe
+{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+@-webkit-keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) 
+{
+  .prev, .next,.text {font-size: 11px}
+}
+        #sidenav
+{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(14, 14, 14);
+    opacity: 30%;
+    z-index: 2;
+    transition: 0.7s;
+    /* color: black; */
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(252, 250, 250);
+}
+nav ul li a:hover
+{
+    color: orange;
+    text-shadow: 4px 4px 8px rgb(68, 33, 68);
+}
+#menubtn
+{
+    width: 50px;
+    height: 50px;
+    /* background: navy; */
+    /* border: 2px  solid white; */
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    border-radius: 30px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img
+{
+    width: 25px;
+    /* margin-top: 25px; */
+}
+        /*--Services--*/
+body
+{
+    width: 100%;
+    padding: 70px 0;
+    /* background: rgb(134, 93, 125); */
+    /* background: rgb(250, 210, 245); */
+    background: url(download.jfif);
+    /* height: 100vh;
+    width: 100%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /* background: lightgoldenrodyellow; */
+    /* opacity: 90%; */
+}
+.service-box
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service-1
+{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    position: relative;
+}
+.single-service-2
+{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    position: relative;
+}
+.single-service-3
+{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    position: relative;
+}
+.single-service-4
+{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    position: relative;
+}
+.single-service-1 img
+{
+    width: 100%;
+    height: 98%;
+    border-radius: 9px;
+}
+.single-service-2 img
+{
+    width: 99.7%;
+    border-radius: 9px;
+}
+.single-service-3 img
+{
+    border-radius: 9px;
+    width: 100%;
+    height: 85%;
+}
+.single-service-4 img
+{
+    border-radius: 9px;
+    width: 99.3%;
+    height: 85%;
+}
+.overlay-1
+{
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.3),rgb(126, 158, 206));
+    opacity: 0;
+    transition: 1s;
+}
+.overlay-2
+{
+    width: 99.9%;
+    height: 99.5%;
+    position: absolute;
+    top: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.3),rgb(126, 158, 206));
+    opacity: 0;
+    transition: 1s;
+}
+.overlay-3
+{
+    width: 100%;
+    height: 84.6%;
+    position: absolute;
+    top: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.3),rgb(126, 158, 206));
+    opacity: 0;
+    transition: 1s;
+}
+.overlay-4
+{
+    width: 99.4%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.3),rgb(126, 158, 206));
+    opacity: 0;
+    transition: 1s;
+}
+.single-service-1:hover .overlay-1
+{
+    opacity: 1;
+}
+.single-service-2:hover .overlay-2
+{
+    opacity: 1;
+}
+.single-service-3:hover .overlay-3
+{
+    opacity: 1;
+}
+.single-service-4:hover .overlay-4
+{
+    opacity: 1;
+}
+.service-desc
+{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+.service-desc-3
+{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr
+{
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p
+{
+    font-size: 17px;
+}
+.service-desc-3 p
+{
+    font-size: 17px;
+}
+.single-service-1:hover .service-desc
+{
+    bottom: 45%;
+    opacity: 1;
+}
+.single-service-2:hover .service-desc
+{
+    bottom: 45%;
+    opacity: 1;
+}
+.single-service-3:hover .service-desc-3
+{
+    bottom: 45%;
+    opacity: 1;
+}
+.single-service-4:hover .service-desc
+{
+    bottom: 45%;
+    opacity: 1;
+}
+.title-text p{
+    font-size: 60px;
+    /* color: rgb(84, 32, 32); */
+    color: black;
+    text-shadow: 2px 2px rgb(250, 248, 248); 
+}
+.title-text h1{
+    font-size: 25px; 
+    color:black;
+     /* text-shadow: 2px 2px white;  */
+}
+
+    </style>
+</head>
+<body>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href='NewLogin.html'>LOGIN</a></li>
+                <li><a href='index.html'>HOME</a></li>
+                <li><a href='features.html'>FEATURES</a></li>
+                <li><a href='service.html'>SERVICES</a></li>
+                <li><a href='testimonials.html'>TESTIMONIALS</a></li>
+                <li><a href='aboutus.html'>ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+<div id="menubtn">
+   <img src="menu1.png" alt="">
+</div>
+    <!--Services-->
+<section id="service">
+    <div class="title-text">
+        <p>SERVICES</p>
+        <h1>We Provide Best....</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service-1">
+            <img src="Video-11.jpg">
+            <div class="overlay-1"></div>
+            <div class="service-desc">
+                <h3>Design-Stage & Decors</h3>
+                <hr>
+                <p>Morden and executive decors with fully customized audio & visual effects including 
+                    special effects and creative photo booth.</p>
+            </div>
+        </div>
+        <div class="single-service-2">
+            <img src="restaurant.jpg">
+            <div class="overlay-2"></div>
+            <div class="service-desc">
+            <h3>Catering Management</h3>
+            <hr>
+            <p>Provides different types of cuisine with fantastic quality of nutritious food by our professional chefs.</p>
+            </div>
+        </div> 
+        <div class="single-service-3">
+             <img src="Invitation&RSVP.jpg">
+             <div class="overlay-3"></div>
+             <div class="service-desc-3">
+             <h3>Event Invitations</h3>
+             <hr>
+             <p>Provides stylised Invitations & RSVP of the particular event according to the customers requirement.</p>
+             </div>
+        </div>
+        <div class="single-service-4">
+            <img src="Venue.jpg">
+            <div class="overlay-4"></div>
+            <div class="service-desc">
+            <h3>Strategic Plannings</h3>
+            <hr>
+            <p>Provides best destination for the events including pick-up & drop service from the location,
+                stylised photo shoot and best talent management.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenave = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+
+    sidenav.style.right ="-250px";
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right =="-250px"){
+            sidenav.style.right ="0";
+            menu.src = "close.png";
+        }
+        else{
+            sidenav.style.right ="-250px";
+            menu.src = "menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+        loader.style.display = "none";
+    })
+</script>
+    <!--Gallery-->
+<section id="gallery">
+    <div class="title-text">
+        <p>GALLERY</p>
+        <h1>Our Innovations & Creations</h1>
+        <!-- <marquee width="52%" direction="left" height="50px" scrollamount="4" behavior="alternate">
+           "Have a complete glimpse to our commendable performances"!
+        </marquee> -->
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 10</div>
+          <img src="music festival.png" style="width:100%">
+          <div class="text">The Grand Music Festival</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 10</div>
+          <img src="destination wedding.jpg" style="width:100%">
+          <div class="text">Awesome Destination Memorable Wedding</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 10</div>
+          <img src="corporate event.jpg" style="width:100%">
+          <div class="text">Business Conference</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="Video-3.png" style="width:100%">
+            <div class="text">Sponsorship Marathon Event</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="birthday party.jpg" style="width:100%">
+            <div class="text">Birthday Bash</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="kity-party.png" style="width:100%">
+            <div class="text">Girls Night Out</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="college event.jpg" style="width:100%">
+            <div class="text">Amazing College Fest</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="food festival.jpg" style="width:100%">
+            <div class="text">Festival For Foddies</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="virtual event.jpg" style="width:100%">
+            <div class="text">Event With Technologies</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="community event.jpg" style="width:100%">
+            <div class="text">Exciting Community Gatherings</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <marquee>These are one of the top NCS music (No Copyright Sounds) used in our comapny...Check it out and Enjoy your Glancing:)</marquee>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <script>
+            var myIndex = 0;
+            carousel();
+           function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides fade");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000);    
+            }
+       </script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script> 
+</section>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenave = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+
+    sidenav.style.right ="-250px";
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right =="-250px"){
+            sidenav.style.right ="0";
+            menu.src = "close.png";
+        }
+        else{
+            sidenav.style.right ="-250px";
+            menu.src = "menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+        loader.style.display = "none";
+    })
+</script>
+
+</body>
+</html>

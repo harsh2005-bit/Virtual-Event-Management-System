@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://img.freepik.com/free-vector/branding-identity-corporate-vector-logo-s-design_460848-8637.jpg" />
+    <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="bubbles">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/58/41/53/58415315d4b7ea275c1d3a6310db4be6.jpg" alt="">
+    </div>
+    <section id="banner">
+        <img src="https://evently.ro/wp-content/uploads/2023/05/LOGO-EVENTLY-ALB.png" class="logo">
+        <div class="banner-text">
+            <h1>Evently</h1>
+            <p>For All Your Future Events</p>
+            <div class="banner-btn">
+                <a href="aboutus.html"><span></span>About Us</a>
+                <a href="NewLogin.html"><span></span>Login/Register</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href='NewLogin.html'>LOGIN</a></li>
+                <li><a href='index.html'>HOME</a></li>
+                <li><a href='features.html'>FEATURES</a></li>
+                <li><a href='service.html'>SERVICES</a></li>
+                <li><a href='testimonials.html'>TESTIMONIALS</a></li>
+                <li><a href='aboutus.html'>ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+<div id="menubtn">
+   <img src="menu_FILL0_wght400_GRAD0_opsz24.png" alt="">
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenave = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+
+    sidenav.style.right ="-250px";
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right =="-250px"){
+            sidenav.style.right ="0";
+            menu.src = "close.png";
+        }
+        else{
+            sidenav.style.right ="-250px";
+            menu.src = "menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+        loader.style.display = "none";
+    })
+</script>
+</body>
+</html>

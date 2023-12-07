@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testimonial</title>
+    <style>
+        #sidenav
+{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(21, 20, 20);
+    opacity: 30%;
+    z-index: 2;
+    transition: 0.7s;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover
+{
+    color: orange;
+    text-shadow: 4px 4px 8px rgb(68, 33, 68);
+}
+#menubtn
+{
+    width: 50px;
+    height: 50px;
+    /* background: navy; */
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img
+{
+    width: 25px;
+    margin-top: 25px;
+}
+        /*--Testimonial--*/
+body
+{
+    width: 100%;
+    padding: 70px 0;
+    background: lightyellow;
+}
+.testimonial-row
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-column
+{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 15px 3px #009688; */
+    box-shadow: 0 10px 15px 3px #622a5b;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonial-column p
+{
+    font-size: 13px;
+    color: brown;
+    font-weight: 800;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img
+{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.user-info .fa
+{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info .fa-instagram
+{
+    margin-left: 10px;
+    color: rgb(248, 19, 153);
+    font-size: 20px;
+}
+.user-info small
+{
+    color: navy;
+}
+.testimonial-column:hover
+{
+    transform: translateY(-7px);
+}
+@media screen and (max-width: 770px) 
+{
+    .testimonial-column{
+        flex-basis: 100%;
+    }
+}
+/*--Contact Us--*/
+body
+{
+    padding: 100px 0 20px;
+    /* background: lightgoldenrodyellow; */
+    /* background: ; */
+    background: url(bgimage.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgb(14, 14, 14); */
+    position: relative;
+}
+.footer-row
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right
+{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right
+{
+    text-align: right;
+}
+.footer-row h1
+{
+    margin: 10px 0;
+}
+.footer-row p
+{
+    line-height: 35px;
+}
+.footer-left .fa, .footer-right .fa
+{
+    font-size: 20px;
+    color: navy;
+    margin: 10px;
+}
+.footer-img
+{
+    max-width: 380px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+.social-links
+{
+    text-align: center;
+}
+.social-links .fa
+{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 2px solid navy;
+    border-radius: 5px;
+    margin: 40px 5px 0;
+    color: navy;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social-links .fa:hover
+{
+    background: navy;
+    color: whitesmoke;
+    transform: translateY(-7px);
+}
+.social-links p
+{
+    font-size: 12px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 770px) 
+{
+    .footer-left, .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top: 25%;
+    }
+}
+/*--Preloader--*/
+#preloader
+{
+    background: black url(pre-loader.gif) no-repeat center center;
+    background-size: 80%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+/*--Login and Online Booking Buttons--*/
+#buttons
+{
+    width: 100%;
+    height: 50px;
+    padding: 70px 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+.online a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0 15px;
+    color: cyan;
+    letter-spacing: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-weight: 800;
+    -webkit-box-reflect: below 0.5px linear-gradient(transparent,#0001);
+}
+.online a:nth-child(1)
+{
+    filter: hue-rotate(240deg);
+}
+.online a:hover
+{
+    color: black;
+    background: cyan;
+    box-shadow: 0 0 30px cyan;
+    transition-delay: 0.5s;
+}
+.online a:before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid cyan;
+    border-left: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.online a:hover:before
+{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+.online a:after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid cyan;
+    border-right: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.online a:hover:after
+{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+    </style>
+</head>
+<body>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href='NewLogin.html'>LOGIN</a></li>
+                <li><a href='index.html'>HOME</a></li>
+                <li><a href='features.html'>FEATURES</a></li>
+                <li><a href='service.html'>SERVICES</a></li>
+                <li><a href='testimonials.html'>TESTIMONIALS</a></li>
+                <li><a href='aboutus.html'>ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+<div id="menubtn">
+   <img src="menu_FILL0_wght400_GRAD0_opsz24.png" alt="">
+</div>
+    <!--Testimonial-->
+<section id="testimonial">
+    <div class="title-text">
+        <p>TESTIMONIAL</p>
+        <h1>Happy Client Appraisals:)</h1>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="business man.jpg">
+                <div class="user-info">
+                    <h4>ROBERT MILLER <i class="fa fa-twitter"></i></h4>
+                    <small>@robertmiller_12</small>
+                </div>
+            </div>
+            <p>Events organized by Evently are one of the most excellent planners I have ever seen.The management is 
+                really organized,advanced with technologies and updated ideas.The planners made my daughter's wedding
+                fabulous by their decors,food,amazing services and facilities.And I was not at all worried for my budget,
+                it was stress free.
+            </p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="business woman.jpg">
+                <div class="user-info">
+                    <h4>EMMA WILLIAMS<i class="fa fa-facebook-official"></i></h4>
+                    <small>@emma_williams28</small>
+                </div>
+            </div>
+            <p>I was very new to this event planner concept but the company really satisified my needs for
+                sponsorship event which really meant to me.All the arrangements were professionally done by the company.
+                From nourishments to the location of the event and commendable talent management which was a boom to the event.
+                Nice job done!!
+            </p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="business teenager.jpg">
+                <div class="user-info">
+                    <h4>CHARLOTTE JOHNSON<i class="fa fa-instagram"></i></h4>
+                    <small>@charlotte22</small>
+                </div>
+            </div>
+            <p>Wonderful job done by the Evently.I really enjoyed my birthday with my friends.
+                What I loved most are the arrangements, decoration,food, DJ night and what not. 
+                I really loved the concept of the event planners no words to mention. Thank you so much Gold Jacquard for making
+                my birthday memorable. 
+            </p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="b-suit.jpg">
+                <div class="user-info">
+                    <h4>MAX BROWN<i class="fa fa-twitter"></i></h4>
+                    <small>@king_maxbrown</small>
+                </div>
+            </div>
+            <p>Commendable work done by Evently.I whole heartedly liked the management by them.
+                The community event organized was so special that everyone liked it.Thank you so much for your
+                talent management team, they light up the stage with joy.One of the best management team in the
+                city I personally suggest everyone.
+            </p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="b-teen.jpg">
+                <div class="user-info">
+                    <h4>VICTORIA JONES<i class="fa fa-facebook-official"></i></h4>
+                    <small>@vicky_2709</small>
+                </div>
+            </div>
+            <p>Excellent arrangements done by the palnners.I am very impressed with the company.Actually the event
+                planners were suggested by my friends and they really reached my standards. My girls night out plan
+                made successful and memorable by these people.I really appereciate the team and thank you so much
+                for making my day.
+            </p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="b-potrait.jpg">
+                <div class="user-info">
+                    <h4>TREVOR SCOTT<i class="fa fa-instagram"></i></h4>
+                    <small>@scottrevor_15</small>
+                </div>
+            </div>
+            <p>Really appereciate work done by the Evently.I am really glad to choose this company
+                for my sports sponsorship event.And thank you so much for the sponsorship.All the arrangements
+                that I needed was perfectly done,it was like "my vision and there innovation". Thanks a lot
+                to made my event happen.Lots of love from my team...
+            </p>
+        </div>
+    </div>
+</section>
+<!--Contact Us-->
+<section id="footer">
+    <img src="footer-img.jpg" class="footer-img">
+    <div class="title-text">
+        <p>CONTACT US</p>
+        <h1>Visit Us Today...</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i>Monday to Friday - 10am to 8:30pm</p>
+            <p><i class="fa fa-clock-o"></i>Saturday & Sunday - 9am to 1:30pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p><i class="fa fa-map-marker"> :</i>Saksham Malhotra<br>Reg: 12307247</p>
+            <p><i class="fa fa-map-marker"> :</i>Harsh Kumar<br>Reg: 12307768</p>
+            <p><i class="fa fa-map-marker"> :</i>Aarav Gandhi<br>Reg: 12324632</p>
+        </div>
+    </div>
+    <div class="social-links">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-youtube-play"></i>
+        <p>@ Copyright Evently</p>
+    </div>
+</section>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenave = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+
+    sidenav.style.right ="-250px";
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right =="-250px"){
+            sidenav.style.right ="0";
+            menu.src = "close.png";
+        }
+        else{
+            sidenav.style.right ="-250px";
+            menu.src = "menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+        loader.style.display = "none";
+    })
+</script>
+</body>
+</html>
